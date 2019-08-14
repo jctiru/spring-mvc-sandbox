@@ -7,13 +7,14 @@
 
 <head>
 <meta charset="ISO-8859-1">
-<title>Spring MVC</title>
+<title>Hello World!</title>
 </head>
 
 <body>
-	<h2>Spring MVC Demo - Home Page</h2>
-	<hr>
-	<a href="show-form">Hello World Form</a>
+	<h1>Hello World of Spring!</h1>
+	<br>
+	<br>
+	<h3>Student name: ${param.studentName}</h3>
 </body>
 
 </html>
