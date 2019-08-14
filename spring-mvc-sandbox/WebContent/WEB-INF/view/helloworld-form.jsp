@@ -12,7 +12,7 @@
 
 <body>
 	<form
-		action="process-form"
+		action="process-form-two"
 		method="GET">
 		<input
 			type="text"
