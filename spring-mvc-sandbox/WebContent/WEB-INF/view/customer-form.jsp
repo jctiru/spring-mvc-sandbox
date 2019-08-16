@@ -23,6 +23,7 @@
 <body>
 	<i>Fill out the form. Asterisk(*) means required.</i>
 	<br>
+	<!-- Upon loading page, call customer.getPropertyName e.g. 'path=firstName' = 'customer.getFirstName' -->
 	<form:form
 		action="process-form"
 		modelAttribute="customer">
@@ -44,6 +45,12 @@
 		Postal Code: <form:input path="postalCode" />
 		<form:errors
 			path="postalCode"
+			cssClass="error" />
+		<br>
+		<br>
+		Course Code: <form:input path="courseCode" />
+		<form:errors
+			path="courseCode"
 			cssClass="error" />
 		<br>
 		<br>
