@@ -14,10 +14,6 @@
         http://www.springframework.org/schema/util     
         http://www.springframework.org/schema/util/spring-util.xsd">
 
-	<!-- Read from property file -->
-	<util:properties id="countryOptions"
-		location="classpath:../countries.properties" />
-
 	<!-- Step 3: Add support for component scanning -->
 	<context:component-scan
 		base-package="test.springmvcsandbox.springdemo" />
@@ -30,6 +26,17 @@
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/view/" />
 		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- Read from property file -->
+	<util:properties id="countryOptions"
+		location="classpath:../countries.properties" />
+
+	<!-- Load custom message resources -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<!-- Load resources/messages.properties -->
+		<property name="basename" value="resources/messages" />
 	</bean>
 
 </beans>

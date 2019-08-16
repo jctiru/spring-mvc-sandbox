@@ -16,8 +16,11 @@
 </head>
 
 <body>
+	<!-- ${object.methodName} Spring will call ${customer.getFirstName()} -->
 	<h3>The customer is confirmed: ${customer.firstName}
 		${customer.lastName}</h3>
+	<h3>Free passes: ${customer.freePasses}</h3>
+	<h3>Postal code: ${customer.postalCode}</h3>
 </body>
 
 </html>
